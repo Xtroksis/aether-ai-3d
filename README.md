@@ -1,16 +1,40 @@
-# React + Vite
+Aether AI — 3D Product Showcase & Pricing Calculator
+Современный интерактивный лендинг для AI / SaaS продуктов с 3D-графикой, динамическим переключением цветовых спектров и мгновенной интеграцией с Telegram Bot API для сбора заявок.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo: https://aether-ai-3d.netlify.app/
 
-Currently, two official plugins are available:
+✨ Особенности проекта
+3D Web Graphics (React Three Fiber & Three.js): Интерактивный голографический квантовый реактор с плавающей анимацией, гироскопическими кольцами и эффектом свечения, реагирующий на изменение нагрузки в реальном времени.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Интерактивный калькулятор тарифов: Динамический расчет стоимости подписки в зависимости от выбранного количества запросов с поддержкой переключения «Месяц / Год (-20%)».
 
-## React Compiler
+Интеграция с Telegram Bot API: Прямая отправка заявок из модального окна в личный чат администратора (с поддержкой демо-режима для проверки клиентами).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Glassmorphism UI: Футуристичный дизайн с эффектом матового стекла, неоновыми градиентами и полностью адаптивной версткой.
 
-## Expanding the ESLint configuration
+Безопасность конфигурации: Использование переменных окружения (Vite Env) для защиты токенов API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 Стек технологий
+Frontend: React, Vite
+
+3D & Animation: Three.js, @react-three/fiber, @react-three/drei
+
+Styling: CSS3 (Glassmorphism, Flexbox / CSS Grid)
+
+Icons & UI: Lucide React
+
+Hosting & CI/CD: Netlify
+
+💻 Локальный запуск
+Клонируйте репозиторий:
+git clone https://github.com/Xtroksis/aether-ai-3d.git
+
+Установите зависимости:
+npm install
+
+Создайте файл .env в корне проекта и добавьте параметры Telegram:
+VITE_TELEGRAM_BOT_TOKEN=ваш_токен_бота
+VITE_OWNER_CHAT_ID=ваш_айди_чата
+
+Запустите локальный сервер:
+npm run dev
